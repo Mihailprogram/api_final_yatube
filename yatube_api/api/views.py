@@ -1,4 +1,5 @@
 from django.shortcuts import get_object_or_404
+
 from rest_framework import mixins, permissions, viewsets
 from rest_framework.filters import SearchFilter
 from rest_framework.pagination import LimitOffsetPagination
@@ -6,7 +7,7 @@ from rest_framework.pagination import LimitOffsetPagination
 from posts.models import Comment, Follow, Group, Post
 from .permissions import IsAuthorOrReadOnly
 from .serializers import (
-    CommentSerializer, FollowSerializer, GroupSerializer, PostSerializer
+    CommentSerializer, FollowSerializer, GroupSerializer, PostSerializer,
 )
 
 
